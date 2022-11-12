@@ -1,9 +1,0 @@
-vccd1 power 1.8
-vssd1 power 0.0
-#define std_input min@vssd1 max@vccd1
-clk input std_input
-dn input std_input
-en input std_input
-load input std_input
-rst_n input std_input
-data[3:0] input std_input

@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 180000 120000
+string GDS_FILE /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/magic/user_proj_dummy.gds
+string GDS_END 5707290
+string GDS_START 67626
+<< end >>

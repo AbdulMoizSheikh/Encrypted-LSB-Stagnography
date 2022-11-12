@@ -1,0 +1,185 @@
+Wed Aug 24 12:47:55 UTC 2022 - Executing "openroad -python /openlane/scripts/extract_metal_layers.py -t /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/met_layers_list.txt"
+
+Wed Aug 24 12:47:56 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Wed Aug 24 12:47:56 UTC 2022 - Executing "/openlane/scripts/libtrim.pl /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/trimmed.lib.exclude.list > /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/trimmed.lib"
+
+Wed Aug 24 12:47:56 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/shahid/OSPDKs/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/config.tracks"
+
+Wed Aug 24 12:47:57 UTC 2022 - Executing "echo {openlane 2021.11.23_01.42.34} > /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/OPENLANE_VERSION"
+
+Wed Aug 24 12:47:57 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Wed Aug 24 12:47:57 UTC 2022 - Executing "yosys -c /openlane/scripts/synth.tcl -l /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/synthesis/1-yosys.log |& tee >&@stdout"
+
+Wed Aug 24 12:47:58 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/synthesis\/user_proj_dummy.synthesis.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:47:58 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:47:58 UTC 2022 - Executing "sed -i /defparam/d /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/synthesis/user_proj_dummy.synthesis.v"
+
+Wed Aug 24 12:47:58 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/synthesis/1-opensta"
+
+Wed Aug 24 12:47:59 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/floorplan/3-init_floorplan.openroad.log"
+
+Wed Aug 24 12:48:00 UTC 2022 - Executing "openroad -python /openlane/scripts/io_place.py --input-lef /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/merged.lef --input-def /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/floorplan/3-init_floorplan_openroad.def --config /home/shahid/caravel_user_project/openlane/user_proj_dummy/pin_order.cfg --hor-layer 4 --ver-layer 3 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/floorplan/4-ioPlacer.def |& tee /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/floorplan/4-place_io_ol.log >&@stdout"
+
+Wed Aug 24 12:48:01 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/floorplan/5-tapcell.log"
+
+Wed Aug 24 12:48:02 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/floorplan/7-pdn.log"
+
+Wed Aug 24 12:48:04 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/replace.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/placement/8-replace.log"
+
+Wed Aug 24 12:48:06 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/placement/8-resizer_design_optimization.log"
+
+Wed Aug 24 12:48:08 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/9-write_verilog.log"
+
+Wed Aug 24 12:48:08 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/resizer\/user_proj_dummy_optimized.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:08 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/synthesis\/user_proj_dummy.synthesis.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:08 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/placement/10-opendp.log"
+
+Wed Aug 24 12:48:10 UTC 2022 - Executing "/openlane/scripts/libtrim.pl /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/cts.lib.exclude.list > /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/cts.lib"
+
+Wed Aug 24 12:48:10 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/cts/11-cts.log"
+
+Wed Aug 24 12:48:38 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/12-write_verilog.log"
+
+Wed Aug 24 12:48:39 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/cts\/user_proj_dummy.cts_resynth.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:39 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/resizer\/user_proj_dummy_optimized.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:39 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer_timing.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/placement/12-resizer_timing_optimization.log"
+
+Wed Aug 24 12:48:41 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/13-write_verilog.log"
+
+Wed Aug 24 12:48:41 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/resizer\/user_proj_dummy_optimized.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:41 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/cts\/user_proj_dummy.cts_resynth.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:41 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer_routing_timing.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/13-resizer_timing_optimization.log"
+
+Wed Aug 24 12:48:43 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/14-write_verilog.log"
+
+Wed Aug 24 12:48:44 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/resizer\/user_proj_dummy_optimized.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:44 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/resizer\/user_proj_dummy_optimized.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:44 UTC 2022 - Executing "openroad -python /openlane/scripts/place_diodes.py -l /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/merged.lef -id /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/placement/13-resizer_timing.def -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/placement/15-diodes.def --diode-cell sky130_fd_sc_hd__diode_2 --diode-pin DIODE --fake-diode-cell sky130_fd_sc_hd__diode_2 |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/placement/15-diodes.log"
+
+Wed Aug 24 12:48:45 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/placement/16-opendp.log"
+
+Wed Aug 24 12:48:46 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/17-write_verilog.log"
+
+Wed Aug 24 12:48:47 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/synthesis\/user_proj_dummy.synthesis_diodes.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:47 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/resizer\/user_proj_dummy_optimized.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:47 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/fill.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/18-addspacers.log"
+
+Wed Aug 24 12:48:48 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/19-fastroute.log"
+
+Wed Aug 24 12:48:50 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/20-write_verilog.log"
+
+Wed Aug 24 12:48:51 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/tmp\/routing\/fastroute_gr.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:51 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/synthesis\/user_proj_dummy.synthesis_diodes.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:48:51 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/droute.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/21-tritonRoute.log"
+
+Wed Aug 24 12:49:11 UTC 2022 - Executing "openroad -python /openlane/scripts/tr2klayout.py -i /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/routing/21-tritonRoute.drc -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/routing/21-tritonRoute.klayout.xml --design-name user_proj_dummy"
+
+Wed Aug 24 12:49:12 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/22-spef_extraction.log"
+
+Wed Aug 24 12:49:13 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/22-spef_extraction_sta"
+
+Wed Aug 24 12:49:15 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/24-spef_extraction.log"
+
+Wed Aug 24 12:49:16 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/25-spef_extraction.log"
+
+Wed Aug 24 12:49:18 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta_multi_corner.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/25-spef_extraction_multi_corner_sta"
+
+Wed Aug 24 12:49:21 UTC 2022 - Executing "openroad -python /openlane/scripts/write_powered_def.py -d /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/routing/20-user_proj_dummy.def -l /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/merged.lef --power-port vccd1 --ground-port vssd1 --powered-netlist {} -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/routing/27-user_proj_dummy.powered.def |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/lvs/27-write_powered_verilog.log"
+
+Wed Aug 24 12:49:23 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/28-write_verilog.log"
+
+Wed Aug 24 12:49:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/results\/lvs\/user_proj_dummy.lvs.powered.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:49:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/shahid\/caravel_user_project\/openlane\/user_proj_dummy\/runs\/user_proj_dummy\/tmp\/routing\/fastroute_gr.v/} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/config.tcl"
+
+Wed Aug 24 12:49:24 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/shahid/OSPDKs/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/mag_gds.tcl </dev/null |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/magic/29-magic.log"
+
+Wed Aug 24 12:49:26 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/shahid/OSPDKs/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/gds_pointers.tcl </dev/null |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/magic/30-magic.mag.gds_ptrs.log"
+
+Wed Aug 24 12:49:27 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/magic/magic_gds_ptrs.mag"
+
+Wed Aug 24 12:49:27 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/shahid/OSPDKs/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/lef.tcl </dev/null |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/magic/31-magic.lef.log"
+
+Wed Aug 24 12:49:39 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/shahid/OSPDKs/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/maglef.tcl </dev/null |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/magic/32-magic.maglef.log"
+
+Wed Aug 24 12:49:40 UTC 2022 - Executing "bash /openlane/scripts/klayout/def2gds.sh /home/shahid/OSPDKs/sky130A/libs.tech/klayout/sky130A.lyt /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/routing/20-user_proj_dummy.def user_proj_dummy /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/klayout/user_proj_dummy.gds {/home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds } |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/klayout/33-klayout.log"
+
+Wed Aug 24 12:49:41 UTC 2022 - Executing "bash /openlane/scripts/klayout/xor.sh /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/magic/user_proj_dummy.gds /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/klayout/user_proj_dummy.gds user_proj_dummy /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/klayout/user_proj_dummy.xor.gds |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/klayout/34-klayout.xor.log"
+
+Wed Aug 24 12:49:58 UTC 2022 - Executing "openroad -python /openlane/scripts/parse_klayout_xor_log.py -l /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/klayout/34-klayout.xor.log -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/klayout/34-klayout.xor.rpt"
+
+Wed Aug 24 12:49:59 UTC 2022 - Executing "bash /openlane/scripts/klayout/xor.sh /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/magic/user_proj_dummy.gds /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/klayout/user_proj_dummy.gds user_proj_dummy /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/klayout/user_proj_dummy.xor.xml |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/klayout/35-klayout.xor.log"
+
+Wed Aug 24 12:50:15 UTC 2022 - Executing "openroad -python /openlane/scripts/parse_klayout_xor_log.py -l /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/klayout/35-klayout.xor.log -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/klayout/35-klayout.xor.rpt"
+
+Wed Aug 24 12:50:15 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/shahid/OSPDKs/sky130A/libs.tech/magic/sky130A.magicrc /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/magic_spice.tcl </dev/null |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/magic/36-magic_spice.log"
+
+Wed Aug 24 12:50:33 UTC 2022 - Executing "netgen -batch source /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/lvs/setup_file.lef.lvs |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/lvs/37-lvs.lef.log"
+
+Wed Aug 24 12:50:55 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/shahid/OSPDKs/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/drc.tcl </dev/null |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/magic/38-magic.drc.log"
+
+Wed Aug 24 12:51:56 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_tcl.py -i /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.drc -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.drc.tcl"
+
+Wed Aug 24 12:51:57 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_tr_drc.py -i /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.drc -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.tr.drc"
+
+Wed Aug 24 12:51:58 UTC 2022 - Executing "openroad -python /openlane/scripts/tr2klayout.py -i /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.tr.drc -o /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.drc.klayout.xml --design-name user_proj_dummy"
+
+Wed Aug 24 12:51:59 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_rdb.py --magic_drc_in /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.drc --rdb_out /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.drc.rdb"
+
+Wed Aug 24 12:52:00 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/antenna_check.tcl |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/routing/39-antenna.log"
+
+Wed Aug 24 12:52:01 UTC 2022 - Executing "mv -f /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/routing/antenna.rpt /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/routing/40-antenna.rpt"
+
+Wed Aug 24 12:52:01 UTC 2022 - Executing "awk { BEGIN {  # Print power and standard_input definitions
+    print "vccd1 power 1.8";
+    print "vssd1 power 0.0";
+    print "#define std_input min@vssd1 max@vccd1";
+}
+$1 == "input" {  # Print input nets
+    gsub(/;/, "");
+    if ( $2 == "vccd1" || $2 == "vssd1" ) {  # ignore power nets
+        next;
+    }
+    if ( NF == 3 ) {  # print buses as net[range]
+        $2 = $3 $2;
+    }
+    print $2, "input std_input";
+}} /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/lvs/user_proj_dummy.lvs.powered.v > /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/cvc/user_proj_dummy.power"
+
+Wed Aug 24 12:52:01 UTC 2022 - Executing "awk { /Black-box entry subcircuit/ {  # remove black-box defintions
+    while ( $1 != ".ends" ) {
+        getline;
+    }
+    getline;
+}
+/^\*/ {  # remove comments
+    next;
+}
+/^.ENDS .*/ {  # remove name from ends lines
+    print $1;
+    next;
+}
+ {
+    print $0;
+}} /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/magic/user_proj_dummy.lef.spice > /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/cvc/user_proj_dummy.cdl"
+
+Wed Aug 24 12:52:01 UTC 2022 - Executing "cvc /openlane/scripts/cvc/sky130A/cvcrc.sky130A |& tee >&@stdout /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/logs/cvc/41-cvc_screen.log"
+
+Wed Aug 24 12:52:02 UTC 2022 - Executing "openroad -python /openlane/scripts/generate_reports.py -d /home/shahid/caravel_user_project/openlane/user_proj_dummy --design_name user_proj_dummy --tag user_proj_dummy --output_file /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/final_summary_report.csv --man_report /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/manufacturability_report.rpt --runtime_summary /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/runtime_summary_report.rpt --run_path /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy"
+

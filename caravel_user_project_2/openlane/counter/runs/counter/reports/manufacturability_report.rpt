@@ -1,0 +1,19 @@
+Design Name: counter
+Run Directory: /home/shahid/caravel_user_project/openlane/counter/runs/counter
+----------------------------------------
+
+Magic DRC Summary:
+Source: /home/shahid/caravel_user_project/openlane/counter/runs/counter/reports/magic/36-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /home/shahid/caravel_user_project/openlane/counter/runs/counter/results/lvs/counter.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /home/shahid/caravel_user_project/openlane/counter/runs/counter/reports/routing/38-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

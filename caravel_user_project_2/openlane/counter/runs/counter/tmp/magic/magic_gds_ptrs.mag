@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 120000 120000
+string GDS_FILE /home/shahid/caravel_user_project/openlane/counter/runs/counter/results/magic/counter.gds
+string GDS_END 3801228
+string GDS_START 169470
+<< end >>

@@ -1,0 +1,105 @@
+OpenROAD b79f266fe41540eabc064bcaddfe19ed715ac5c2 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/shahid/caravel_user_project/openlane/counter/runs/counter/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/shahid/caravel_user_project/openlane/counter/runs/counter/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /home/shahid/caravel_user_project/openlane/counter/runs/counter/results/floorplan/counter.floorplan.def
+[INFO ODB-0128] Design: counter
+[INFO ODB-0130]     Created 13 pins.
+[INFO ODB-0131]     Created 5266 components and 11540 component-terminals.
+[INFO ODB-0133]     Created 36 nets and 106 connections.
+[INFO ODB-0134] Finished DEF file: /home/shahid/caravel_user_project/openlane/counter/runs/counter/results/floorplan/counter.floorplan.def
+[INFO PDN-0016] Power Delivery Network Generator: Generating PDN
+  config: /openlane/scripts/openroad/pdn_cfg.tcl
+[INFO PDN-0008] Design name is counter.
+[INFO PDN-0009] Reading technology data.
+[INFO PDN-0011] ****** INFO ******
+Type: stdcell, stdcell_grid
+    Stdcell Rails
+      Layer: met1  -  width: 0.480  pitch: 5.440 
+    Straps
+      Layer: met4  -  width: 1.600  pitch: 153.600  offset: 16.320 
+    Connect: {met1 met4}
+Type: macro, CORE_macro_grid_1
+    Macro orientation: R0 R180 MX MY R90 R270 MXR90 MYR90
+    Straps
+    Connect: {met4_PIN_ver met5}
+[INFO PDN-0012] **** END INFO ****
+[INFO PDN-0013] Inserting stdcell grid - stdcell_grid.
+[INFO PDN-0015] Writing to database.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vccd1 is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (5.520um, 10.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (21.840um, 10.800um).
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (329.040um, 151.200um).
+[WARNING PSM-0030] VSRC location at (565.520um, 290.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (482.640um, 291.600um).
+[WARNING PSM-0030] VSRC location at (5.520um, 430.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (21.840um, 432.000um).
+[INFO PSM-0031] Number of PDN nodes on net vccd1 = 14636.
+[INFO PSM-0064] Number of voltage sources = 4.
+[INFO PSM-0040] All PDN stripes on net vccd1 are connected.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vssd1 is not explicitly set.
+[WARNING PSM-0021] Using voltage 0.000V for ground network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (5.520um, 10.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (98.640um, 10.800um).
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (252.240um, 151.200um).
+[WARNING PSM-0030] VSRC location at (565.520um, 290.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (559.440um, 291.600um).
+[WARNING PSM-0030] VSRC location at (5.520um, 430.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (98.640um, 432.000um).
+[INFO PSM-0031] Number of PDN nodes on net vssd1 = 14770.
+[INFO PSM-0064] Number of voltage sources = 4.
+[INFO PSM-0040] All PDN stripes on net vssd1 are connected.
+[INFO]: Setting RC values...
+[INFO PSM-0002] Output voltage file is specified as: /home/shahid/caravel_user_project/openlane/counter/runs/counter/reports/floorplan/7-pdn.pga.rpt.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vccd1 is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (5.520um, 10.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (21.840um, 10.800um).
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (329.040um, 151.200um).
+[WARNING PSM-0030] VSRC location at (565.520um, 290.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (482.640um, 291.600um).
+[WARNING PSM-0030] VSRC location at (5.520um, 430.880um) and size 10.000um, is not located on a power stripe. Moving to closest stripe at (21.840um, 432.000um).
+[INFO PSM-0031] Number of PDN nodes on net vccd1 = 14636.
+[WARNING PSM-0024] Instance _23_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _24_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _25_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _26_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _27_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _28_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _29_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _30_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _31_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _32_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _33_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _34_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _35_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _36_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _37_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _38_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _39_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _40_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _41_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _42_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _43_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _44_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _45_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _46_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _47_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _48_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _49_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[INFO PSM-0064] Number of voltage sources = 4.
+[INFO PSM-0040] All PDN stripes on net vccd1 are connected.
+########## IR report #################
+Worstcase voltage: 1.80e+00 V
+Average IR drop  : 3.34e-10 V
+Worstcase IR drop: 8.72e-10 V
+######################################

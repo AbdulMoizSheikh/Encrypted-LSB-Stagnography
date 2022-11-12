@@ -1,0 +1,16 @@
+
+12. Printing statistics.
+
+=== user_proj_dummy ===
+
+   Number of wires:                 20
+   Number of wire bits:            610
+   Number of public wires:          20
+   Number of public wire bits:     610
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $_DFF_P_                        2
+     $_NOT_                          4
+

@@ -1,0 +1,40 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: io_in[0] (input port clocked by wb_clk_i)
+Endpoint: io_out[0] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.05    0.04    2.04 v io_in[0] (in)
+     2    0.02                           io_in[0] (net)
+                  0.05    0.00    2.04 v _002_/A (sky130_fd_sc_hd__inv_2)
+                  0.16    0.15    2.19 ^ _002_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.03                           io_out[0] (net)
+                  0.16    0.00    2.19 ^ io_out[0] (out)
+                                  2.19   data arrival time
+
+                  0.15   10.00   10.00   clock wb_clk_i (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.19   data arrival time
+-----------------------------------------------------------------------------
+                                  5.56   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.

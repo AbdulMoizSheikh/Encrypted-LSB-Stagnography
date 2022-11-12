@@ -1,0 +1,19 @@
+
+31. Printing statistics.
+
+=== user_proj_dummy ===
+
+   Number of wires:                 18
+   Number of wire bits:            608
+   Number of public wires:          18
+   Number of public wire bits:     608
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                240
+     sky130_fd_sc_hd__conb_1       234
+     sky130_fd_sc_hd__dfxtp_2        2
+     sky130_fd_sc_hd__inv_2          4
+
+   Chip area for module '\user_proj_dummy': 935.897600
+

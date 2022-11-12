@@ -1,0 +1,38 @@
+digraph "counter" {
+label="counter";
+rankdir="LR";
+remincross=true;
+n5 [ shape=octagon, label="count", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="data", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="load", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="dn", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="en", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="rst_n", color="black", fontcolor="black" ];
+n11 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+v0 [ label="1" ];
+c15 [ shape=record, label="{{<p12> A|<p13> B}|$4\n$add|{<p14> Y}}" ];
+v1 [ label="1" ];
+c16 [ shape=record, label="{{<p12> A|<p13> B}|$3\n$sub|{<p14> Y}}" ];
+c17 [ shape=record, label="{{<p12> A}|$2\n$not|{<p14> Y}}" ];
+x3 [ shape=record, style=rounded, label="<s0> 3:0 - 3:0 " ];
+x4 [ shape=record, style=rounded, label="<s0> 3:0 - 3:0 " ];
+p2 [shape=box, style=rounded, label="PROC $1\n/home/shahid/caravel_user_project/openlane/counter/../../verilog/rtl/counter.v:14.5-28.8"];
+c15:p14:e -> x4:s0:w [color="black", style="setlinewidth(3)", label=""];
+n10:e -> c17:p12:w [color="black", label=""];
+n10:e -> p2:w [color="black", label=""];
+n11:e -> p2:w [color="black", label=""];
+c16:p14:e -> x3:s0:w [color="black", style="setlinewidth(3)", label=""];
+c17:p14:e -> p2:w [color="black", label=""];
+p2:e -> n5:w [color="black", style="setlinewidth(3)", label=""];
+n5:e -> c15:p12:w [color="black", style="setlinewidth(3)", label=""];
+n5:e -> c16:p12:w [color="black", style="setlinewidth(3)", label=""];
+n5:e -> p2:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> p2:w [color="black", style="setlinewidth(3)", label=""];
+n7:e -> p2:w [color="black", label=""];
+n8:e -> p2:w [color="black", label=""];
+n9:e -> p2:w [color="black", label=""];
+v0:e -> c15:p13:w [color="black", style="setlinewidth(3)", label=""];
+v1:e -> c16:p13:w [color="black", style="setlinewidth(3)", label=""];
+x3:e -> p2:w [color="black", style="setlinewidth(3)", label=""];
+x4:e -> p2:w [color="black", style="setlinewidth(3)", label=""];
+}

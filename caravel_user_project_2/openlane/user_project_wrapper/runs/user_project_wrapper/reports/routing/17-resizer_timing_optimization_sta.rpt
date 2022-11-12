@@ -1,0 +1,24 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: user_clock2 (clock source 'user_clock2')
+Endpoint: mprj/user_clock2 (internal pin)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.78    0.80    5.80 v user_clock2 (in)
+     1    0.36                           user_clock2 (net)
+                  1.11    0.00    5.80 v mprj/user_clock2 (user_proj_dummy)
+                                  5.80   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.

@@ -1,0 +1,19 @@
+Design Name: user_proj_dummy
+Run Directory: /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy
+----------------------------------------
+
+Magic DRC Summary:
+Source: /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/magic/38-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/lvs/user_proj_dummy.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/reports/routing/40-antenna.rpt
+Number of pins violated: 1
+Number of nets violated: 1

@@ -1,0 +1,8 @@
+Wed Aug 24 13:09:48 UTC 2022 - Executing "openroad -python /openlane/scripts/extract_metal_layers.py -t /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef -o /home/shahid/caravel_user_project/openlane/user_proj_example/runs/user_proj_example/tmp/met_layers_list.txt"
+
+Wed Aug 24 13:09:49 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /home/shahid/caravel_user_project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Wed Aug 24 13:09:49 UTC 2022 - Executing "/openlane/scripts/libtrim.pl /home/shahid/OSPDKs/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /home/shahid/caravel_user_project/openlane/user_proj_example/runs/user_proj_example/tmp/trimmed.lib.exclude.list > /home/shahid/caravel_user_project/openlane/user_proj_example/runs/user_proj_example/tmp/trimmed.lib"
+
+Wed Aug 24 13:09:49 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/shahid/OSPDKs/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/shahid/caravel_user_project/openlane/user_proj_example/runs/user_proj_example/tmp/config.tracks"
+

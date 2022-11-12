@@ -1,0 +1,17 @@
+OpenROAD b79f266fe41540eabc064bcaddfe19ed715ac5c2 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/shahid/caravel_user_project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 443 library cells
+[INFO ODB-0226] Finished LEF file:  /home/shahid/caravel_user_project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged.lef
+[INFO ODB-0127] Reading DEF file: /home/shahid/caravel_user_project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/4-init_floorplan_openroad.def
+[INFO ODB-0128] Design: user_project_wrapper
+[INFO ODB-0130]     Created 637 pins.
+[INFO ODB-0131]     Created 1 components and 15 component-terminals.
+[INFO ODB-0133]     Created 639 nets and 15 connections.
+[INFO ODB-0134] Finished DEF file: /home/shahid/caravel_user_project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/4-init_floorplan_openroad.def
+Top-level design name: user_project_wrapper
+Block boundaries: 0 0 2920000 3520000
+Writing /home/shahid/caravel_user_project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/5-ioPlacer.def...

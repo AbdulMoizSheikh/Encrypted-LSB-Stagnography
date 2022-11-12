@@ -1,0 +1,1887 @@
+OpenROAD b79f266fe41540eabc064bcaddfe19ed715ac5c2 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/routing/18-addspacers.def
+[INFO ODB-0128] Design: user_proj_dummy
+[INFO ODB-0130]     Created 610 pins.
+[INFO ODB-0131]     Created 51743 components and 192933 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 192420 connections.
+[INFO ODB-0133]     Created 619 nets and 279 connections.
+[INFO ODB-0134] Finished DEF file: /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/tmp/routing/18-addspacers.def
+[INFO]: Setting signal min routing layer to: li1 and clock min routing layer to li1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[INFO GRT-0020] Min routing layer: li1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0224] Chose via L1M1_PR as default.
+[INFO GRT-0224] Chose via M1M2_PR as default.
+[INFO GRT-0224] Chose via M2M3_PR as default.
+[INFO GRT-0224] Chose via M3M4_PR as default.
+[INFO GRT-0224] Chose via M4M5_PR as default.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 266421
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 5
+[INFO GRT-0017] Processing 266964 blockages on layer li1.
+[INFO GRT-0017] Processing 103727 blockages on layer met1.
+[INFO GRT-0017] Processing 12 blockages on layer met4.
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical       167700          1222          99.27%
+met1       Horizontal     223600        143964          35.62%
+met2       Vertical       167700        166175          0.91%
+met3       Horizontal     111800        111972          -0.15%
+met4       Vertical        67080         65632          2.16%
+met5       Horizontal      22360         22188          0.77%
+---------------------------------------------------------------
+
+[INFO GRT-0191] Wirelength: 429, Wirelength1: 0
+[INFO GRT-0192] Number of segments: 258
+[INFO GRT-0193] Number of shifts: 0
+[INFO GRT-0097] First L Route.
+[INFO GRT-0191] Wirelength: 429, Wirelength1: 429
+[INFO GRT-0192] Number of segments: 258
+[INFO GRT-0193] Number of shifts: 0
+[INFO GRT-0135] Overflow report.
+[INFO GRT-0136] Total hCap               : 278124
+[INFO GRT-0137] Total vCap               : 233029
+[INFO GRT-0138] Total usage              : 429
+[INFO GRT-0139] Max H overflow           : 0
+[INFO GRT-0140] Max V overflow           : 0
+[INFO GRT-0141] Max overflow             : 0
+[INFO GRT-0142] Number of overflow edges : 0
+[INFO GRT-0143] H   overflow             : 0
+[INFO GRT-0144] V   overflow             : 0
+[INFO GRT-0145] Final overflow           : 0
+
+[INFO GRT-0098] Second L Route.
+[INFO GRT-0135] Overflow report.
+[INFO GRT-0136] Total hCap               : 278124
+[INFO GRT-0137] Total vCap               : 233029
+[INFO GRT-0138] Total usage              : 429
+[INFO GRT-0139] Max H overflow           : 0
+[INFO GRT-0140] Max V overflow           : 0
+[INFO GRT-0141] Max overflow             : 0
+[INFO GRT-0142] Number of overflow edges : 0
+[INFO GRT-0143] H   overflow             : 0
+[INFO GRT-0144] V   overflow             : 0
+[INFO GRT-0145] Final overflow           : 0
+
+[INFO GRT-0099] First Z Route.
+[INFO GRT-0135] Overflow report.
+[INFO GRT-0136] Total hCap               : 278124
+[INFO GRT-0137] Total vCap               : 233029
+[INFO GRT-0138] Total usage              : 429
+[INFO GRT-0139] Max H overflow           : 0
+[INFO GRT-0140] Max V overflow           : 0
+[INFO GRT-0141] Max overflow             : 0
+[INFO GRT-0142] Number of overflow edges : 0
+[INFO GRT-0143] H   overflow             : 0
+[INFO GRT-0144] V   overflow             : 0
+[INFO GRT-0145] Final overflow           : 0
+
+[INFO GRT-0100] LV routing round 0, enlarge 10.
+[INFO GRT-0182] 10 threshold, 10 expand.
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 429
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+[INFO GRT-0100] LV routing round 1, enlarge 15.
+[INFO GRT-0182] 5 threshold, 15 expand.
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 429
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+[INFO GRT-0100] LV routing round 2, enlarge 20.
+[INFO GRT-0182] 1 threshold, 20 expand.
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 429
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+Usage checked
+[INFO GRT-0105] Maze routing finished.
+Final 2D results:
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 429
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+[INFO GRT-0106] Layer assignment begins.
+[INFO GRT-0107] Layer assignment finished.
+[INFO GRT-0108] Post-processing begins.
+[INFO GRT-0109] Post-processing finished.
+ Starting via filling.
+[INFO GRT-0197] Via related to pin nodes: 950
+[INFO GRT-0198] Via related Steiner nodes: 0
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 985
+[INFO GRT-0112] Final usage 3D: 3384
+[WARNING GRT-0211] dbGcellGrid already exists in db. Clearing existing dbGCellGrid.
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1               1222             2            0.16%             0 /  0 /  0
+met1            143964           187            0.13%             0 /  0 /  0
+met2            166175           240            0.14%             0 /  0 /  0
+met3            111972             0            0.00%             0 /  0 /  0
+met4             65632             0            0.00%             0 /  0 /  0
+met5             22188             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           511153           429            0.08%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 10053 um
+[INFO GRT-0014] Routed nets: 256
+###############################################################################
+# Created by write_sdc
+# Wed Aug 24 12:48:43 2022
+###############################################################################
+current_design user_proj_dummy
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name wb_clk_i -period 10.0000 [get_ports {wb_clk_i}]
+set_clock_transition 0.1500 [get_clocks {wb_clk_i}]
+set_clock_uncertainty 0.2500 wb_clk_i
+set_propagated_clock [get_clocks {wb_clk_i}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[0]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[10]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[11]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[12]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[13]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[14]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[15]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[16]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[17]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[18]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[19]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[1]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[20]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[21]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[22]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[23]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[24]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[25]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[26]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[27]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[28]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[29]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[2]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[30]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[31]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[32]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[33]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[34]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[35]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[36]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[37]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[3]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[4]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[5]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[6]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[7]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[8]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_in[9]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[0]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[100]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[101]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[102]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[103]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[104]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[105]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[106]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[107]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[108]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[109]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[10]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[110]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[111]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[112]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[113]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[114]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[115]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[116]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[117]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[118]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[119]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[11]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[120]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[121]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[122]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[123]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[124]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[125]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[126]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[127]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[12]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[13]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[14]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[15]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[16]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[17]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[18]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[19]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[1]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[20]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[21]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[22]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[23]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[24]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[25]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[26]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[27]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[28]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[29]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[2]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[30]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[31]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[32]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[33]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[34]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[35]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[36]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[37]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[38]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[39]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[3]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[40]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[41]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[42]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[43]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[44]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[45]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[46]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[47]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[48]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[49]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[4]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[50]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[51]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[52]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[53]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[54]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[55]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[56]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[57]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[58]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[59]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[5]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[60]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[61]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[62]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[63]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[64]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[65]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[66]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[67]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[68]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[69]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[6]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[70]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[71]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[72]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[73]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[74]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[75]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[76]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[77]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[78]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[79]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[7]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[80]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[81]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[82]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[83]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[84]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[85]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[86]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[87]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[88]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[89]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[8]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[90]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[91]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[92]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[93]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[94]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[95]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[96]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[97]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[98]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[99]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_in[9]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[0]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[100]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[101]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[102]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[103]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[104]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[105]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[106]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[107]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[108]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[109]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[10]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[110]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[111]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[112]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[113]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[114]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[115]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[116]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[117]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[118]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[119]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[11]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[120]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[121]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[122]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[123]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[124]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[125]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[126]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[127]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[12]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[13]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[14]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[15]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[16]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[17]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[18]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[19]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[1]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[20]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[21]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[22]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[23]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[24]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[25]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[26]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[27]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[28]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[29]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[2]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[30]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[31]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[32]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[33]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[34]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[35]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[36]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[37]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[38]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[39]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[3]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[40]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[41]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[42]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[43]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[44]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[45]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[46]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[47]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[48]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[49]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[4]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[50]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[51]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[52]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[53]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[54]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[55]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[56]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[57]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[58]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[59]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[5]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[60]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[61]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[62]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[63]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[64]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[65]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[66]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[67]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[68]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[69]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[6]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[70]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[71]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[72]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[73]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[74]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[75]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[76]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[77]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[78]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[79]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[7]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[80]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[81]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[82]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[83]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[84]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[85]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[86]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[87]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[88]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[89]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[8]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[90]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[91]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[92]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[93]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[94]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[95]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[96]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[97]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[98]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[99]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_oenb[9]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {user_clock2}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb_rst_i}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[0]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[10]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[11]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[12]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[13]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[14]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[15]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[16]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[17]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[18]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[19]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[1]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[20]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[21]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[22]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[23]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[24]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[25]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[26]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[27]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[28]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[29]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[2]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[30]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[31]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[3]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[4]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[5]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[6]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[7]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[8]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_adr_i[9]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_cyc_i}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[0]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[10]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[11]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[12]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[13]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[14]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[15]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[16]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[17]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[18]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[19]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[1]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[20]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[21]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[22]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[23]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[24]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[25]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[26]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[27]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[28]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[29]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[2]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[30]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[31]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[3]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[4]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[5]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[6]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[7]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[8]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_i[9]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_sel_i[0]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_sel_i[1]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_sel_i[2]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_sel_i[3]}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_stb_i}]
+set_input_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_we_i}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[0]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[10]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[11]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[12]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[13]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[14]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[15]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[16]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[17]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[18]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[19]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[1]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[20]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[21]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[22]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[23]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[24]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[25]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[26]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[27]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[28]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[29]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[2]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[30]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[31]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[32]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[33]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[34]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[35]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[36]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[37]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[3]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[4]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[5]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[6]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[7]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[8]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_oeb[9]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[0]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[10]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[11]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[12]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[13]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[14]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[15]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[16]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[17]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[18]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[19]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[1]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[20]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[21]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[22]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[23]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[24]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[25]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[26]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[27]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[28]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[29]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[2]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[30]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[31]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[32]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[33]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[34]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[35]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[36]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[37]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[3]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[4]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[5]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[6]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[7]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[8]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {io_out[9]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {irq[0]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {irq[1]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {irq[2]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[0]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[100]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[101]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[102]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[103]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[104]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[105]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[106]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[107]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[108]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[109]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[10]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[110]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[111]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[112]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[113]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[114]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[115]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[116]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[117]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[118]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[119]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[11]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[120]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[121]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[122]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[123]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[124]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[125]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[126]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[127]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[12]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[13]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[14]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[15]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[16]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[17]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[18]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[19]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[1]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[20]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[21]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[22]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[23]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[24]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[25]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[26]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[27]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[28]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[29]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[2]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[30]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[31]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[32]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[33]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[34]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[35]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[36]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[37]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[38]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[39]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[3]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[40]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[41]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[42]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[43]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[44]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[45]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[46]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[47]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[48]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[49]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[4]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[50]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[51]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[52]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[53]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[54]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[55]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[56]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[57]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[58]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[59]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[5]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[60]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[61]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[62]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[63]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[64]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[65]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[66]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[67]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[68]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[69]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[6]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[70]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[71]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[72]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[73]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[74]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[75]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[76]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[77]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[78]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[79]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[7]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[80]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[81]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[82]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[83]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[84]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[85]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[86]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[87]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[88]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[89]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[8]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[90]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[91]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[92]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[93]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[94]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[95]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[96]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[97]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[98]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[99]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {la_data_out[9]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_ack_o}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[0]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[10]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[11]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[12]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[13]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[14]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[15]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[16]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[17]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[18]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[19]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[1]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[20]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[21]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[22]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[23]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[24]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[25]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[26]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[27]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[28]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[29]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[2]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[30]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[31]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[3]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[4]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[5]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[6]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[7]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[8]}]
+set_output_delay 2.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wbs_dat_o[9]}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0334 [get_ports {wbs_ack_o}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[37]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[36]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[35]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[34]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[33]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[32]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[31]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[30]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[29]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[28]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[27]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[26]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[25]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[24]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[23]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[22]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[21]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[20]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[19]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[18]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[17]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[16]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[15]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[14]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[13]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[12]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[11]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[10]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[9]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[8]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[7]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[6]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[5]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[4]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[3]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[2]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[1]}]
+set_load -pin_load 0.0334 [get_ports {io_oeb[0]}]
+set_load -pin_load 0.0334 [get_ports {io_out[37]}]
+set_load -pin_load 0.0334 [get_ports {io_out[36]}]
+set_load -pin_load 0.0334 [get_ports {io_out[35]}]
+set_load -pin_load 0.0334 [get_ports {io_out[34]}]
+set_load -pin_load 0.0334 [get_ports {io_out[33]}]
+set_load -pin_load 0.0334 [get_ports {io_out[32]}]
+set_load -pin_load 0.0334 [get_ports {io_out[31]}]
+set_load -pin_load 0.0334 [get_ports {io_out[30]}]
+set_load -pin_load 0.0334 [get_ports {io_out[29]}]
+set_load -pin_load 0.0334 [get_ports {io_out[28]}]
+set_load -pin_load 0.0334 [get_ports {io_out[27]}]
+set_load -pin_load 0.0334 [get_ports {io_out[26]}]
+set_load -pin_load 0.0334 [get_ports {io_out[25]}]
+set_load -pin_load 0.0334 [get_ports {io_out[24]}]
+set_load -pin_load 0.0334 [get_ports {io_out[23]}]
+set_load -pin_load 0.0334 [get_ports {io_out[22]}]
+set_load -pin_load 0.0334 [get_ports {io_out[21]}]
+set_load -pin_load 0.0334 [get_ports {io_out[20]}]
+set_load -pin_load 0.0334 [get_ports {io_out[19]}]
+set_load -pin_load 0.0334 [get_ports {io_out[18]}]
+set_load -pin_load 0.0334 [get_ports {io_out[17]}]
+set_load -pin_load 0.0334 [get_ports {io_out[16]}]
+set_load -pin_load 0.0334 [get_ports {io_out[15]}]
+set_load -pin_load 0.0334 [get_ports {io_out[14]}]
+set_load -pin_load 0.0334 [get_ports {io_out[13]}]
+set_load -pin_load 0.0334 [get_ports {io_out[12]}]
+set_load -pin_load 0.0334 [get_ports {io_out[11]}]
+set_load -pin_load 0.0334 [get_ports {io_out[10]}]
+set_load -pin_load 0.0334 [get_ports {io_out[9]}]
+set_load -pin_load 0.0334 [get_ports {io_out[8]}]
+set_load -pin_load 0.0334 [get_ports {io_out[7]}]
+set_load -pin_load 0.0334 [get_ports {io_out[6]}]
+set_load -pin_load 0.0334 [get_ports {io_out[5]}]
+set_load -pin_load 0.0334 [get_ports {io_out[4]}]
+set_load -pin_load 0.0334 [get_ports {io_out[3]}]
+set_load -pin_load 0.0334 [get_ports {io_out[2]}]
+set_load -pin_load 0.0334 [get_ports {io_out[1]}]
+set_load -pin_load 0.0334 [get_ports {io_out[0]}]
+set_load -pin_load 0.0334 [get_ports {irq[2]}]
+set_load -pin_load 0.0334 [get_ports {irq[1]}]
+set_load -pin_load 0.0334 [get_ports {irq[0]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[127]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[126]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[125]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[124]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[123]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[122]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[121]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[120]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[119]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[118]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[117]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[116]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[115]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[114]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[113]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[112]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[111]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[110]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[109]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[108]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[107]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[106]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[105]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[104]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[103]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[102]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[101]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[100]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[99]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[98]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[97]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[96]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[95]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[94]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[93]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[92]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[91]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[90]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[89]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[88]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[87]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[86]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[85]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[84]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[83]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[82]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[81]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[80]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[79]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[78]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[77]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[76]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[75]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[74]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[73]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[72]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[71]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[70]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[69]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[68]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[67]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[66]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[65]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[64]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[63]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[62]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[61]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[60]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[59]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[58]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[57]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[56]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[55]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[54]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[53]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[52]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[51]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[50]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[49]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[48]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[47]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[46]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[45]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[44]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[43]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[42]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[41]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[40]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[39]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[38]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[37]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[36]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[35]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[34]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[33]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[32]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[31]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[30]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[29]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[28]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[27]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[26]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[25]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[24]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[23]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[22]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[21]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[20]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[19]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[18]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[17]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[16]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[15]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[14]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[13]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[12]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[11]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[10]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[9]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[8]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[7]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[6]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[5]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[4]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[3]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[2]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[1]}]
+set_load -pin_load 0.0334 [get_ports {la_data_out[0]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[31]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[30]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[29]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[28]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[27]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[26]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[25]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[24]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[23]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[22]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[21]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[20]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[19]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[18]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[17]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[16]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[15]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[14]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[13]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[12]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[11]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[10]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[9]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[8]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[7]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[6]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[5]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[4]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[3]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[2]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[1]}]
+set_load -pin_load 0.0334 [get_ports {wbs_dat_o[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {user_clock2}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wb_clk_i}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wb_rst_i}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_cyc_i}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_stb_i}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_we_i}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[37]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[36]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[35]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[34]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[33]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[32]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_in[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[127]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[126]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[125]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[124]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[123]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[122]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[121]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[120]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[119]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[118]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[117]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[116]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[115]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[114]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[113]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[112]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[111]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[110]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[109]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[108]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[107]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[106]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[105]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[104]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[103]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[102]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[101]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[100]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[99]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[98]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[97]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[96]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[95]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[94]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[93]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[92]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[91]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[90]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[89]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[88]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[87]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[86]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[85]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[84]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[83]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[82]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[81]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[80]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[79]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[78]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[77]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[76]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[75]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[74]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[73]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[72]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[71]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[70]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[69]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[68]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[67]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[66]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[65]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[64]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[63]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[62]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[61]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[60]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[59]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[58]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[57]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[56]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[55]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[54]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[53]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[52]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[51]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[50]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[49]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[48]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[47]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[46]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[45]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[44]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[43]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[42]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[41]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[40]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[39]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[38]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[37]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[36]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[35]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[34]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[33]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[32]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_data_in[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[127]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[126]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[125]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[124]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[123]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[122]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[121]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[120]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[119]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[118]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[117]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[116]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[115]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[114]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[113]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[112]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[111]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[110]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[109]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[108]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[107]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[106]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[105]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[104]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[103]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[102]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[101]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[100]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[99]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[98]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[97]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[96]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[95]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[94]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[93]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[92]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[91]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[90]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[89]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[88]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[87]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[86]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[85]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[84]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[83]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[82]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[81]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[80]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[79]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[78]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[77]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[76]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[75]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[74]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[73]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[72]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[71]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[70]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[69]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[68]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[67]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[66]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[65]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[64]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[63]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[62]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[61]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[60]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[59]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[58]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[57]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[56]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[55]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[54]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[53]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[52]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[51]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[50]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[49]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[48]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[47]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[46]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[45]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[44]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[43]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[42]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[41]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[40]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[39]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[38]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[37]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[36]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[35]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[34]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[33]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[32]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {la_oenb[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_adr_i[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_dat_i[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_sel_i[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_sel_i[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_sel_i[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_sel_i[0]}]
+set_timing_derate -early 0.9500
+set_timing_derate -late 1.0500
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: _239_ (rising edge-triggered flip-flop)
+Endpoint: io_out[4] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.22    0.00    0.00 ^ _239_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.03    0.33    0.33 v _239_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.00                           net10 (net)
+                  0.03    0.00    0.33 v output10/A (sky130_fd_sc_hd__buf_2)
+                  0.10    0.16    0.49 v output10/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[4] (net)
+                  0.10    0.01    0.51 v io_out[4] (out)
+                                  0.51   data arrival time
+
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -0.51   data arrival time
+-----------------------------------------------------------------------------
+                                  2.26   slack (MET)
+
+
+Startpoint: _238_ (rising edge-triggered flip-flop)
+Endpoint: io_out[5] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.22    0.00    0.00 ^ _238_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.04    0.34    0.34 v _238_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.01                           net11 (net)
+                  0.04    0.00    0.35 v output11/A (sky130_fd_sc_hd__buf_2)
+                  0.10    0.16    0.51 v output11/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[5] (net)
+                  0.11    0.02    0.53 v io_out[5] (out)
+                                  0.53   data arrival time
+
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -0.53   data arrival time
+-----------------------------------------------------------------------------
+                                  2.28   slack (MET)
+
+
+Startpoint: io_in[2] (input port clocked by wb_clk_i)
+Endpoint: io_out[2] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 ^ input external delay
+                  0.04    0.03    2.03 ^ io_in[2] (in)
+     2    0.01                           io_in[2] (net)
+                  0.04    0.00    2.03 ^ input3/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.10    0.11    2.14 ^ input3/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net3 (net)
+                  0.10    0.00    2.14 ^ _000_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.04    2.18 v _000_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net8 (net)
+                  0.03    0.00    2.18 v output8/A (sky130_fd_sc_hd__buf_2)
+                  0.10    0.16    2.34 v output8/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[2] (net)
+                  0.10    0.01    2.35 v io_out[2] (out)
+                                  2.35   data arrival time
+
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.35   data arrival time
+-----------------------------------------------------------------------------
+                                  4.10   slack (MET)
+
+
+Startpoint: io_in[3] (input port clocked by wb_clk_i)
+Endpoint: io_out[3] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.02    0.01    2.01 v io_in[3] (in)
+     2    0.01                           io_in[3] (net)
+                  0.02    0.00    2.01 v input4/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.09    2.11 v input4/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net4 (net)
+                  0.05    0.00    2.11 v _003_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.04    2.15 ^ _003_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net9 (net)
+                  0.03    0.00    2.15 ^ output9/A (sky130_fd_sc_hd__buf_2)
+                  0.19    0.18    2.34 ^ output9/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[3] (net)
+                  0.19    0.02    2.35 ^ io_out[3] (out)
+                                  2.35   data arrival time
+
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.35   data arrival time
+-----------------------------------------------------------------------------
+                                  4.10   slack (MET)
+
+
+Startpoint: io_in[1] (input port clocked by wb_clk_i)
+Endpoint: io_out[1] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 ^ input external delay
+                  0.05    0.03    2.03 ^ io_in[1] (in)
+     2    0.01                           io_in[1] (net)
+                  0.05    0.00    2.03 ^ input2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.14    2.17 ^ input2/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           net2 (net)
+                  0.12    0.01    2.18 ^ _001_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.03    2.22 v _001_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net7 (net)
+                  0.03    0.00    2.22 v output7/A (sky130_fd_sc_hd__buf_2)
+                  0.10    0.16    2.38 v output7/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[1] (net)
+                  0.10    0.01    2.39 v io_out[1] (out)
+                                  2.39   data arrival time
+
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.39   data arrival time
+-----------------------------------------------------------------------------
+                                  4.14   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: io_in[0] (input port clocked by wb_clk_i)
+Endpoint: io_out[0] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.02    0.02    2.02 v io_in[0] (in)
+     2    0.01                           io_in[0] (net)
+                  0.02    0.00    2.02 v input1/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.10    0.16    2.17 v input1/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           net1 (net)
+                  0.10    0.01    2.18 v _002_/A (sky130_fd_sc_hd__inv_2)
+                  0.04    0.06    2.24 ^ _002_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net6 (net)
+                  0.04    0.00    2.25 ^ output6/A (sky130_fd_sc_hd__buf_2)
+                  0.20    0.21    2.45 ^ output6/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[0] (net)
+                  0.20    0.02    2.47 ^ io_out[0] (out)
+                                  2.47   data arrival time
+
+                         10.00   10.00   clock wb_clk_i (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.47   data arrival time
+-----------------------------------------------------------------------------
+                                  5.28   slack (MET)
+
+
+Startpoint: io_in[1] (input port clocked by wb_clk_i)
+Endpoint: io_out[1] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.02    0.02    2.02 v io_in[1] (in)
+     2    0.01                           io_in[1] (net)
+                  0.02    0.00    2.02 v input2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.14    2.16 v input2/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           net2 (net)
+                  0.08    0.01    2.16 v _001_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.05    2.22 ^ _001_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net7 (net)
+                  0.03    0.00    2.22 ^ output7/A (sky130_fd_sc_hd__buf_2)
+                  0.19    0.21    2.43 ^ output7/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[1] (net)
+                  0.19    0.01    2.44 ^ io_out[1] (out)
+                                  2.44   data arrival time
+
+                         10.00   10.00   clock wb_clk_i (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.44   data arrival time
+-----------------------------------------------------------------------------
+                                  5.31   slack (MET)
+
+
+Startpoint: io_in[3] (input port clocked by wb_clk_i)
+Endpoint: io_out[3] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 ^ input external delay
+                  0.05    0.03    2.03 ^ io_in[3] (in)
+     2    0.01                           io_in[3] (net)
+                  0.05    0.00    2.03 ^ input4/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.10    0.12    2.16 ^ input4/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net4 (net)
+                  0.10    0.00    2.16 ^ _003_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.04    2.20 v _003_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net9 (net)
+                  0.03    0.00    2.20 v output9/A (sky130_fd_sc_hd__buf_2)
+                  0.10    0.17    2.38 v output9/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[3] (net)
+                  0.10    0.02    2.39 v io_out[3] (out)
+                                  2.39   data arrival time
+
+                         10.00   10.00   clock wb_clk_i (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.39   data arrival time
+-----------------------------------------------------------------------------
+                                  5.36   slack (MET)
+
+
+Startpoint: io_in[2] (input port clocked by wb_clk_i)
+Endpoint: io_out[2] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.02    0.01    2.01 v io_in[2] (in)
+     2    0.01                           io_in[2] (net)
+                  0.02    0.00    2.01 v input3/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.10    2.11 v input3/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net3 (net)
+                  0.05    0.00    2.12 v _000_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.05    2.17 ^ _000_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net8 (net)
+                  0.03    0.00    2.17 ^ output8/A (sky130_fd_sc_hd__buf_2)
+                  0.19    0.21    2.37 ^ output8/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[2] (net)
+                  0.19    0.02    2.39 ^ io_out[2] (out)
+                                  2.39   data arrival time
+
+                         10.00   10.00   clock wb_clk_i (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.39   data arrival time
+-----------------------------------------------------------------------------
+                                  5.36   slack (MET)
+
+
+Startpoint: _238_ (rising edge-triggered flip-flop)
+Endpoint: io_out[5] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.22    0.00    0.00 ^ _238_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.07    0.40    0.40 ^ _238_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.01                           net11 (net)
+                  0.07    0.00    0.40 ^ output11/A (sky130_fd_sc_hd__buf_2)
+                  0.20    0.22    0.62 ^ output11/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[5] (net)
+                  0.20    0.02    0.64 ^ io_out[5] (out)
+                                  0.64   data arrival time
+
+                         10.00   10.00   clock wb_clk_i (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -0.64   data arrival time
+-----------------------------------------------------------------------------
+                                  7.11   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: io_in[0] (input port clocked by wb_clk_i)
+Endpoint: io_out[0] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.02    0.02    2.02 v io_in[0] (in)
+     2    0.01                           io_in[0] (net)
+                  0.02    0.00    2.02 v input1/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.10    0.16    2.17 v input1/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           net1 (net)
+                  0.10    0.01    2.18 v _002_/A (sky130_fd_sc_hd__inv_2)
+                  0.04    0.06    2.24 ^ _002_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           net6 (net)
+                  0.04    0.00    2.25 ^ output6/A (sky130_fd_sc_hd__buf_2)
+                  0.20    0.21    2.45 ^ output6/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_out[0] (net)
+                  0.20    0.02    2.47 ^ io_out[0] (out)
+                                  2.47   data arrival time
+
+                         10.00   10.00   clock wb_clk_i (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.47   data arrival time
+-----------------------------------------------------------------------------
+                                  5.28   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 5.28
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 2.26
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock wb_clk_i
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             8.24e-07   1.48e-07   1.69e-11   9.72e-07  11.6%
+Combinational          1.96e-06   5.35e-06   1.20e-07   7.43e-06  88.4%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.78e-06   5.50e-06   1.20e-07   8.40e-06 100.0%
+                          33.1%      65.4%       1.4%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 503296 u^2 98% utilization.
+area_report_end

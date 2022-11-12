@@ -1,6 +1,3 @@
-<< properties >>
-string FIXED_BBOX 0 0 120000 120000
-string GDS_FILE /home/shahid/caravel_user_project/openlane/counter/runs/counter/results/magic/counter.gds
-string GDS_END 3801228
-string GDS_START 169470
-<< end >>
+version https://git-lfs.github.com/spec/v1
+oid sha256:d265383313df10d69ebc9807a860d6302c3eba63bc9db5ed7f9f30df987dd884
+size 216

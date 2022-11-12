@@ -1,6 +1,3 @@
-<< properties >>
-string FIXED_BBOX 0 0 180000 120000
-string GDS_FILE /home/shahid/caravel_user_project/openlane/user_proj_dummy/runs/user_proj_dummy/results/magic/user_proj_dummy.gds
-string GDS_END 5707290
-string GDS_START 67626
-<< end >>
+version https://git-lfs.github.com/spec/v1
+oid sha256:bca38a76c5b5b6de111d6bff8db21038180c99c3557ad618a52d6d466f42b74c
+size 239
